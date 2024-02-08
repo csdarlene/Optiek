@@ -74,29 +74,7 @@ public class Brillen {
                 '}' + "\n";
     }
 
-    public void addNewBril( Brillen b ) {
-        this.modelnummer = modelnummer;
-        this.prijs = prijs;
-        this.merk = merk;
-        this.kleur = kleur;
-        this.voorraad = voorraad;
-    }
-
-    public void displayBrillen( ArrayList<Brillen> arr ) {
-
-        if (arr.isEmpty()) {
-            System.out.println("\n\n");
-            System.out.println("No Items");
-            return;
-        }
-
-        System.out.format("-----------------------------------------------------------------------------------------------------------------------------------");
-        System.out.print("\nModel Nummer\t\t\tPrijs\t\t\tMerk\t\t\t\tKleur\t\t\tAantal\n");
-        System.out.format("-----------------------------------------------------------------------------------------------------------------------------------\n");
 
 
-        for (Brillen b : arr) {
-            System.out.println(b.modelnummer + "\t\t\t\t\t\t" + b.prijs + "\t\t\t" + b.merk + "\t\t\t\t" + b.kleur + " \t\t\t" + b.voorraad);
-        }
-    }
+
 }
