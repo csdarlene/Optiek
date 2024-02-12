@@ -32,13 +32,13 @@ public class Info {
         Brillen bril2 = new Brillen(2, 456, 500.03, "zwart", "chanel");
         Brillen bril3 = new Brillen(16, 168, 106.13, "bruin", "dior");
 
-        bril1.addNewBril(bril1);
+
         bs.brilList.add(bril1);
 
-        bril2.addNewBril(bril2);
+
         bs.brilList.add(bril2);
 
-        bril3.addNewBril(bril3);
+
         bs.brilList.add(bril3);
 
 

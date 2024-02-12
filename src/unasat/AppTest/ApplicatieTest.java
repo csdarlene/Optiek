@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import unasat.Entity.Brillen;
 import unasat.Entity.Klanten;
-import unasat.Scanners.BrillenScanner;
-import unasat.service.Helper;
+import unasat.service.BrillenService;
+import unasat.service.BrillenServiceImpl;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
     class ApplicatieTest {
-        static Helper<Brillen> brillenService = (Helper<Brillen>) new Brillen();
+        static BrillenService brillenService = new BrillenServiceImpl();
 
         Brillen b = new Brillen(20, 123, 932.63, "wit", "nike");
         Klanten k = new Klanten("darlene", -2.5, -0.5, 873321, 162, "pzs");
